@@ -1,0 +1,23 @@
+<%# Add articles listing functionality %>
+<h1>Article listing page</h1>
+
+<table>
+  <thead>
+     <tr>
+     <th> Title</th>
+     <th> Description</th>
+     <th> Actions</th>
+     </tr>
+  </thead>
+
+ <tbody>
+ <%# from controller will make it dynamic calling loop by ruby syntax each entry will display %>
+  <% @articles.each do |article| %>
+   <tr>
+     <td><%= article.title %><td>
+     <td><%= article.description %><td>
+     <td> Placeholder<td>
+   </tr>
+   <% end %>
+ </tbody>
+</table>
