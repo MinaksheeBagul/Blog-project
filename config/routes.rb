@@ -3,5 +3,7 @@ Rails.application.routes.draw do
  get 'about', to:'pages#about'
 #  get 'articles', to:'pages#articles'
 
-resources :articles, only: [:show, :index]
+# resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
+# OR another to display this
+resources :articles
 end
